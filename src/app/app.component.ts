@@ -12,7 +12,7 @@ export class AppComponent {
   altura!: number;
   imc!: number;
   classificacao!: string;
-  imagem!: string;
+  imagem! : string;
   title: any;
 
   calcularIMC() {
@@ -24,17 +24,17 @@ export class AppComponent {
 
   definirClassificacao() {
     if (this.imc < 18.5) {
-      this.classificacao = 'Abaixo do peso';
-      this.imagem = 'https://example.com/baixo-peso.png';
+      this.classificacao = 'magro';
+      this.imagem = 'magro.png';
     } else if (this.imc < 24.9) {
-      this.classificacao = 'Peso normal';
-      this.imagem = 'https://example.com/peso-normal.png';
+      this.classificacao = 'normal';
+      this.imagem = 'normal.png';
     } else if (this.imc < 29.9) {
-      this.classificacao = 'Sobrepeso';
-      this.imagem = 'https://example.com/sobrepeso.png';
+      this.classificacao = 'gordo';
+      this.imagem = 'gordo.png';
     } else {
-      this.classificacao = 'Obesidade';
-      this.imagem = 'https://example.com/obesidade.png';
+      this.classificacao = 'Obeso';
+      this.imagem = 'obeso.png';
     }
   }
 }
